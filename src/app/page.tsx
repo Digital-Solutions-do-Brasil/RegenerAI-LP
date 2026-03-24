@@ -1,64 +1,78 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Header from '../components/Header';
 
-export default function Home() {
+const features = [
+  { icon: 'Prancheta 1.svg', title: 'Inteligência\ncoletiva' },
+  { icon: 'Prancheta 2.svg', title: 'Tecnologia\nque conecta' },
+  { icon: 'Prancheta 3.svg', title: 'Dados a serviço\ndo Agricultor' },
+  { icon: 'Prancheta 4.svg', title: 'Impacto\nRegenerativo' },
+  { icon: 'Prancheta 5.svg', title: 'Inovação\nTransformadora' },
+];
+
+export default function LandingPage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="bg-white text-gray-900 min-h-screen font-sans">
+      <Header />
+      
+      <main className="pt-24 lg:pt-28"> {/* Header fixo */}
+        
+        {/* HERO */}
+        <section id="inicio" className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
+          <Image
+            src="/assets/hero-landscape.png"
+            alt="Plantação ao pôr do sol - RegenerAI"
+            fill
+            sizes="100vw"
+            quality={100}
+            className="object-cover"
+            priority
+          />
+          {/* Apenas a imagem, sem nenhum overlay */}\n          <div className="relative z-10 text-center px-4 w-full flex flex-col items-center">
+            <h1 className="text-5xl md:text-6xl lg:text-[72px] xl:text-[84px] lg:leading-tight font-extrabold text-white mb-2 lg:mb-4 drop-shadow-lg">
+              Nossos dados, nosso solo e nosso futuro
+            </h1>
+            <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white/95 font-medium drop-shadow-md mt-1 lg:mt-3">
+              Transformando experiências em inteligência coletiva
+            </p>
+          </div>
+
+          {/* Slider Dots */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            <div className="w-6 h-2 rounded-full bg-orange-500"></div>
+            <div className="w-2 h-2 rounded-full bg-white/70"></div>
+            <div className="w-2 h-2 rounded-full bg-white/70"></div>
+            <div className="w-2 h-2 rounded-full bg-white/70"></div>
+            <div className="w-2 h-2 rounded-full bg-white/70"></div>
+          </div>
+        </section>
+
+        {/* REGENERAI É */}
+        <section id="sobre" className="py-12 lg:py-16 xl:py-24 px-6 max-w-[1600px] mx-auto text-center">
+          <p className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-500 mb-2 lg:mb-4">
+            E se ninguém precisasse começar do zero.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold text-gray-900 mb-10 lg:mb-16">
+            RegenerAI é:
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 lg:gap-10 xl:gap-14">
+            {features.map((item, i) => (
+              <div key={i} className="flex flex-col items-center text-center gap-3 lg:gap-5 xl:gap-6">
+                <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-28 lg:h-28 xl:w-36 xl:h-36">
+                  <Image
+                    src={`/assets/${item.icon}`}
+                    alt={item.title.replace('\n', ' ')}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-sm md:text-base lg:text-lg xl:text-xl font-bold text-gray-900 whitespace-pre-line leading-tight">
+                  {item.title}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </section>
+
       </main>
     </div>
   );
