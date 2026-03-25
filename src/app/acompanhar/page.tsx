@@ -116,6 +116,7 @@ export default function AcompanharPage() {
               {/* Redirecionamento e Configurações Ocultas do FormSubmit */}
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_subject" value="Novo Contato - RegenerAI" />
+              <input type="hidden" name="_cc" value="regenerai@gaasbrasil.com.br" />
 
               <div className="md:col-span-2 flex justify-end mt-2">
                 <button
