@@ -15,7 +15,7 @@ export default function Header() {
               <Search className="w-6 h-6" />
             </button>
             <a
-              href="https://wa.me/5521975300698"
+              href="https://wa.me/556299526154"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-emerald-500/50 bg-emerald-50/30 px-4 sm:px-5 lg:px-6 py-2 text-sm sm:text-base lg:text-lg font-bold text-emerald-700 hover:bg-emerald-50 hover:border-emerald-500 transition-all"
