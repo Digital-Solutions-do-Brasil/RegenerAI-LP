@@ -23,10 +23,13 @@ export default function SaibaMaisPage() {
           {/* Leve escurecimento para leitura do texto */}
           <div className="absolute inset-0 bg-black/40" />
           
-          <div className="relative z-10 text-center px-6 max-w-[1200px] mx-auto space-y-6">
+          <div className="relative z-10 text-center px-6 max-w-[1200px] mx-auto space-y-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold text-white leading-snug drop-shadow-lg">
-              A transição para a Agricultura Regenerativa já é uma realidade. O Brasil já tem centenas de experiências regenerativas acontecendo.
+              A transição para a Agricultura Regenerativa já é uma realidade.
             </h1>
+            <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-semibold drop-shadow-md">
+              O Brasil já tem centenas de experiências regenerativas acontecendo.
+            </p>
           </div>
         </section>
 
