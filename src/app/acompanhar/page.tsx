@@ -18,9 +18,9 @@ export default function AcompanharPage() {
     <div className="bg-white text-gray-900 min-h-screen font-sans">
       <Header />
 
-      <main className="pt-24 lg:pt-28">
+      <main className="w-full">
         {/* HERO */}
-        <section className="relative w-full h-[60vh] lg:h-[65vh] xl:h-[70vh] min-h-[420px] max-h-[860px] flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative w-full py-16 lg:py-20 min-h-[50vh] lg:min-h-[60vh] flex flex-col items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0 pointer-events-none">
             <Image
               src="/assets/Mulher-com-tablet.png"

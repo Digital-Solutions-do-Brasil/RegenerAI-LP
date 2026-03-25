@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="absolute top-0 w-full z-50 bg-white shadow-sm">
+    <header className="sticky top-0 w-full z-50 bg-white shadow-sm">
       <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-24 py-4 lg:py-0 flex flex-col lg:flex-row lg:h-32 xl:h-40 gap-4 lg:gap-0 lg:items-center lg:justify-between">
         <div className="flex items-center justify-between lg:w-auto">
           <Link href="/" className="relative flex shrink-0 items-center w-[160px] h-[40px] sm:w-[200px] sm:h-[50px] lg:w-[320px] lg:h-[80px] xl:w-[420px] xl:h-[110px]">

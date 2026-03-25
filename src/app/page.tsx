@@ -15,7 +15,7 @@ export default function LandingPage() {
     <div className="bg-white text-gray-900 min-h-screen font-sans">
       <Header />
       
-      <main className="pt-24 lg:pt-28"> {/* Header fixo */}
+      <main className="w-full">
         
         {/* HERO */}
         <section id="inicio" className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
