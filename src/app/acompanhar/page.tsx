@@ -1,19 +1,7 @@
-'use client';
-
-import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Header from '../../components/Header';
 
 export default function AcompanharPage() {
-  const [showForm, setShowForm] = useState(false);
-  const formRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (showForm && formRef.current) {
-      formRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, [showForm]);
-
   return (
     <div className="bg-white text-gray-900 min-h-screen font-sans">
       <Header />
@@ -45,39 +33,10 @@ export default function AcompanharPage() {
           </div>
         </section>
 
-        {/* CTA BUTTON (MOVIDO PARA FORA DA IMAGEM) */}
-        {!showForm && (
-          <section className="w-full bg-gray-50 py-10 flex justify-center items-center">
-            <button
-              type="button"
-              onClick={() => {
-                setShowForm(true);
-                setTimeout(() => {
-                  document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
-              }}
-              className="inline-flex items-center justify-center px-10 py-5 rounded-full bg-emerald-500 text-white font-bold text-xl shadow-2xl hover:bg-emerald-400 transition-all active:scale-95 cursor-pointer"
-            >
-              Quero acompanhar
-            </button>
-          </section>
-        )}
-
-        {/* FORM SECTION */}
-        {showForm && (
-          <section id="formulario" className="relative z-10 w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
-            <div
-              ref={formRef}
-              className="relative max-w-6xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-8 lg:space-y-10"
-            >
-              <button
-                type="button"
-                className="absolute top-4 right-4 sm:top-6 sm:right-6 text-sm font-semibold text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full px-3 py-1"
-                onClick={() => setShowForm(false)}
-              >
-                fechar ✕
-              </button>
-              <div className="space-y-3 mt-4 sm:mt-0">
+        {/* FORM SECTION (ALWAYS OPEN) */}
+        <section id="formulario" className="relative z-10 w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
+          <div className="relative max-w-6xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-8 lg:space-y-10">
+            <div className="space-y-3 mt-4 sm:mt-0">
                 <p className="text-emerald-500 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">Fique por dentro</p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">
                 Quero acompanhar
@@ -143,7 +102,6 @@ export default function AcompanharPage() {
             </form>
           </div>
         </section>
-        )}
       </main>
     </div>
   );
