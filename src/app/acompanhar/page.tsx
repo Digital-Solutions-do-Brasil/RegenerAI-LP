@@ -63,21 +63,36 @@ export default function AcompanharPage() {
               </p>
             </div>
 
-            <form className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <label className="flex flex-col gap-2 text-sm font-semibold text-gray-700">
+            <form action="https://formsubmit.co/vladimir@digitalsolutions4y.com" method="POST" className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <label className="lg:col-span-2 flex flex-col gap-2 text-sm font-semibold text-gray-700">
                 Nome
                 <input
                   type="text"
+                  name="nome"
+                  required
                   placeholder="Seu nome completo"
                   className="w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-base text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-400"
                 />
               </label>
 
               <label className="flex flex-col gap-2 text-sm font-semibold text-gray-700">
-                E-mail / WhatsApp
+                E-mail
                 <input
-                  type="text"
-                  placeholder="seu@email.com ou (00) 00000-0000"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="seu@email.com"
+                  className="w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-base text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                />
+              </label>
+
+              <label className="flex flex-col gap-2 text-sm font-semibold text-gray-700">
+                WhatsApp
+                <input
+                  type="tel"
+                  name="whatsapp"
+                  required
+                  placeholder="(00) 00000-0000"
                   className="w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-base text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-400"
                 />
               </label>
@@ -85,17 +100,22 @@ export default function AcompanharPage() {
               <div className="lg:col-span-2 flex flex-col gap-2 text-sm font-semibold text-gray-700">
                 Observações
                 <textarea
+                  name="observacoes"
                   placeholder="Conte um pouco sobre sua fazenda, desafios ou interesses..."
                   className="w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-base text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-400 min-h-[140px]"
                 />
               </div>
+
+              {/* Redirecionamento e Configurações Ocultas do FormSubmit */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="Novo Contato - RegenerAI" />
 
               <div className="lg:col-span-2 flex justify-end">
                 <button
                   type="submit"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-emerald-500 text-white font-semibold text-lg shadow-lg hover:bg-emerald-400 transition"
                 >
-                  Quero acompanhar
+                  Enviar
                 </button>
               </div>
             </form>
