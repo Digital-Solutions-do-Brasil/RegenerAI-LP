@@ -56,11 +56,8 @@ export default function AcompanharPage() {
               <div className="space-y-3 mt-4">
                 <p className="text-emerald-500 font-semibold tracking-[0.2em] uppercase text-sm">Fique por dentro</p>
               <h2 className="text-3xl lg:text-4xl font-black text-gray-900">
-                Receba cada nova experiência regenerativa diretamente no seu e-mail ou WhatsApp
+                Quero acompanhar
               </h2>
-              <p className="text-lg text-gray-600">
-                Estamos organizando uma memória coletiva com aprendizados reais de campo. Deixe seus contatos para acompanhar as próximas publicações e convites.
-              </p>
             </div>
 
             <form action="https://formsubmit.co/vladimir@digitalsolutions4y.com" method="POST" className="grid grid-cols-1 lg:grid-cols-2 gap-6">
