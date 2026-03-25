@@ -70,7 +70,7 @@ export default function AcompanharPage() {
               </h2>
             </div>
 
-            <form action="https://formsubmit.co/vladimir@digitalsolutions4y.com" method="POST" className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <form action="https://formsubmit.co/regenerai@gaasbrasil.com.br" method="POST" className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <label className="md:col-span-2 flex flex-col gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-gray-700">
                 Nome
                 <input
@@ -116,7 +116,7 @@ export default function AcompanharPage() {
               {/* Redirecionamento e Configurações Ocultas do FormSubmit */}
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_subject" value="Novo Contato - RegenerAI" />
-              <input type="hidden" name="_cc" value="regenerai@gaasbrasil.com.br" />
+              <input type="hidden" name="_cc" value="vladimir@digitalsolutions4y.com" />
 
               <div className="md:col-span-2 flex justify-end mt-2">
                 <button
