@@ -7,7 +7,7 @@ export default function SaibaMaisPage() {
     <div className="bg-white text-gray-900 min-h-screen font-sans">
       <Header />
       
-      <main className="w-full">
+      <main className="pt-24 lg:pt-28">
         
         {/* HERO - HOMEM TRABALHANDO */}
         <section className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
@@ -23,14 +23,18 @@ export default function SaibaMaisPage() {
           {/* Leve escurecimento para leitura do texto */}
           <div className="absolute inset-0 bg-black/40" />
           
-          <div className="relative z-10 text-center px-6 max-w-[1200px] mx-auto space-y-4">
+          <div className="relative z-10 text-center px-6 max-w-[1200px] mx-auto space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold text-white leading-snug drop-shadow-lg">
-              A transição para a Agricultura Regenerativa já é uma realidade.
+              A transição para a Agricultura Regenerativa já é uma realidade. O Brasil já tem centenas de experiências regenerativas acontecendo.
             </h1>
-            <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-semibold drop-shadow-md">
-              O Brasil já tem centenas de experiências regenerativas acontecendo.
-            </p>
           </div>
+
+          <a
+            href="/acompanhar"
+            className="absolute bottom-6 right-6 lg:bottom-12 lg:right-12 z-20 inline-flex items-center gap-2 rounded-full border border-white/50 bg-white/20 px-6 py-3 text-base lg:text-lg font-semibold text-white backdrop-blur hover:bg-white/40"
+          >
+            Saiba mais <ArrowRight className="w-5 h-5" />
+          </a>
         </section>
 
         {/* TEXTO INFORMATIVO ABAIXO DA IMAGEM */}

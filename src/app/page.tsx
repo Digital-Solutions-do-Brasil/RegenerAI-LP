@@ -15,7 +15,7 @@ export default function LandingPage() {
     <div className="bg-white text-gray-900 min-h-screen font-sans">
       <Header />
       
-      <main className="w-full">
+      <main className="pt-24 lg:pt-28"> {/* Header fixo */}
         
         {/* HERO */}
         <section id="inicio" className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
@@ -45,6 +45,14 @@ export default function LandingPage() {
             <div className="w-2 h-2 rounded-full bg-white/70"></div>
             <div className="w-2 h-2 rounded-full bg-white/70"></div>
           </div>
+
+          {/* Botão Saiba Mais apontando para a segunda página */}
+          <a 
+            href="/saiba-mais" 
+            className="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 z-20 flex items-center gap-2 text-white font-semibold text-lg hover:text-emerald-400 transition-colors drop-shadow-md"
+          >
+            Saiba mais <ArrowRight className="w-5 h-5" />
+          </a>
         </section>
 
         {/* REGENERAI É */}
