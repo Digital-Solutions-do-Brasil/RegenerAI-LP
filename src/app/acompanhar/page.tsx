@@ -6,8 +6,6 @@ import Header from '../../components/Header';
 
 export default function AcompanharPage() {
   const [showForm, setShowForm] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const formRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -15,42 +13,6 @@ export default function AcompanharPage() {
       formRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [showForm]);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setMessage(null);
-
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      nome: formData.get('nome') as string,
-      email: formData.get('email') as string,
-      whatsapp: formData.get('whatsapp') as string,
-      observacoes: formData.get('observacoes') as string,
-    };
-
-    try {
-      const response = await fetch('/api/submit-lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setMessage({ type: 'success', text: result.message });
-        e.currentTarget.reset();
-        setTimeout(() => setShowForm(false), 3000);
-      } else {
-        setMessage({ type: 'error', text: result.message });
-      }
-    } catch (error) {
-      setMessage({ type: 'error', text: 'Erro ao enviar formulário. Tente novamente.' });
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <div className="bg-white text-gray-900 min-h-screen font-sans">
@@ -122,7 +84,7 @@ export default function AcompanharPage() {
                 </h2>
               </div>
 
-              <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <form action="https://formsubmit.co/regenerai@gaasbrasil.com.br" method="POST" className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <label className="md:col-span-2 flex flex-col gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-gray-700">
                   Nome
                   <input
@@ -165,20 +127,16 @@ export default function AcompanharPage() {
                   />
                 </div>
 
-                {message && (
-                  <div className={`md:col-span-2 p-4 rounded-xl ${message.type === 'success' ? 'bg-emerald-50 text-emerald-700' : 'bg-red-50 text-red-700'
-                    }`}>
-                    {message.text}
-                  </div>
-                )}
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="Novo Contato - RegenerAI" />
+                <input type="hidden" name="_cc" value="vladimir@digitalsolutions4y.com" />
 
                 <div className="md:col-span-2 flex justify-end mt-2">
                   <button
                     type="submit"
-                    disabled={loading}
-                    className="w-full md:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-emerald-500 text-white font-semibold text-base sm:text-lg shadow-lg hover:bg-emerald-400 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full md:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-emerald-500 text-white font-semibold text-base sm:text-lg shadow-lg hover:bg-emerald-400 transition"
                   >
-                    {loading ? 'Enviando...' : 'Enviar'}
+                    Enviar
                   </button>
                 </div>
               </form>
