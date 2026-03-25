@@ -28,13 +28,6 @@ export default function SaibaMaisPage() {
               A transição para a Agricultura Regenerativa já é uma realidade. O Brasil já tem centenas de experiências regenerativas acontecendo.
             </h1>
           </div>
-
-          <a
-            href="/acompanhar"
-            className="absolute bottom-6 right-6 lg:bottom-12 lg:right-12 z-20 inline-flex items-center gap-2 rounded-full border border-white/50 bg-white/20 px-6 py-3 text-base lg:text-lg font-semibold text-white backdrop-blur hover:bg-white/40"
-          >
-            Saiba mais <ArrowRight className="w-5 h-5" />
-          </a>
         </section>
 
         {/* TEXTO INFORMATIVO ABAIXO DA IMAGEM */}

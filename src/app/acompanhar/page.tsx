@@ -27,11 +27,11 @@ export default function AcompanharPage() {
             fill
             sizes="100vw"
             quality={100}
-            className="object-cover"
+            className="object-cover pointer-events-none"
             priority
           />
 
-          <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl space-y-4 sm:space-y-6 text-white">
+          <div className="relative z-20 pointer-events-auto text-center px-4 sm:px-6 max-w-4xl space-y-4 sm:space-y-6 text-white">
             <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">Agricultura regenerativa colaborativa</p>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold leading-tight">
               E se ninguém mais precisasse começar do zero?
@@ -42,7 +42,7 @@ export default function AcompanharPage() {
             <button
               type="button"
               onClick={() => setShowForm(true)}
-              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 mt-4 rounded-full bg-emerald-500 text-white font-semibold text-base sm:text-lg shadow-2xl hover:bg-emerald-400 transition"
+              className="relative z-30 cursor-pointer pointer-events-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 mt-4 rounded-full bg-emerald-500 text-white font-semibold text-base sm:text-lg shadow-2xl hover:bg-emerald-400 transition active:scale-95"
             >
               Quero acompanhar
             </button>

@@ -45,14 +45,6 @@ export default function LandingPage() {
             <div className="w-2 h-2 rounded-full bg-white/70"></div>
             <div className="w-2 h-2 rounded-full bg-white/70"></div>
           </div>
-
-          {/* Botão Saiba Mais apontando para a segunda página */}
-          <a 
-            href="/saiba-mais" 
-            className="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 z-20 flex items-center gap-2 text-white font-semibold text-lg hover:text-emerald-400 transition-colors drop-shadow-md"
-          >
-            Saiba mais <ArrowRight className="w-5 h-5" />
-          </a>
         </section>
 
         {/* REGENERAI É */}
