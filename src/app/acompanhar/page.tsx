@@ -42,6 +42,12 @@ export default function AcompanharPage() {
             <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">
               E se as experiências reais de campo se transformassem em memória coletiva estruturada? E se o que funcionou (ou não funcionou) em uma fazenda ajudasse outra a tomar decisões mais seguras e assertivas?
             </p>
+          </div>
+        </section>
+
+        {/* CTA BUTTON (MOVIDO PARA FORA DA IMAGEM) */}
+        {!showForm && (
+          <section className="w-full bg-gray-50 py-10 flex justify-center items-center">
             <button
               type="button"
               onClick={() => {
@@ -50,16 +56,16 @@ export default function AcompanharPage() {
                   document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }, 100);
               }}
-              className="mt-6 inline-flex items-center justify-center px-8 py-4 rounded-full bg-emerald-500 text-white font-bold text-lg shadow-2xl hover:bg-emerald-400 transition-all active:scale-95 cursor-pointer z-50"
+              className="inline-flex items-center justify-center px-10 py-5 rounded-full bg-emerald-500 text-white font-bold text-xl shadow-2xl hover:bg-emerald-400 transition-all active:scale-95 cursor-pointer"
             >
               Quero acompanhar
             </button>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* FORM SECTION */}
         {showForm && (
-          <section id="formulario" className="relative z-10 -mt-12 lg:-mt-20 pb-12 lg:pb-16 px-4 sm:px-6 lg:px-12 xl:px-20">
+          <section id="formulario" className="relative z-10 w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
             <div
               ref={formRef}
               className="relative max-w-6xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-8 lg:space-y-10"
