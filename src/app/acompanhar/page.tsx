@@ -1,11 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Header from '../../components/Header';
 
 export default function AcompanharPage() {
   const [showForm, setShowForm] = useState(false);
+  const formRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (showForm && formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [showForm]);
 
   return (
     <div className="bg-white text-gray-900 min-h-screen font-sans">
@@ -45,7 +52,10 @@ export default function AcompanharPage() {
         {/* FORM SECTION */}
         {showForm && (
           <section id="formulario" className="relative z-10 -mt-12 lg:-mt-20 pb-12 lg:pb-16 px-4 sm:px-6 lg:px-12 xl:px-20">
-            <div className="relative max-w-6xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-8 lg:space-y-10">
+            <div
+              ref={formRef}
+              className="relative max-w-6xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-8 lg:space-y-10"
+            >
               <button
                 type="button"
                 className="absolute top-4 right-4 sm:top-6 sm:right-6 text-sm font-semibold text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full px-3 py-1"
