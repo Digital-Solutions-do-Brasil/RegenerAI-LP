@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Chamar Lambda via API Gateway
-    const apiUrl = process.env.API_GATEWAY_URL || 'https://jyjbkau75b.execute-api.us-east-2.amazonaws.com/leads';
+    const apiUrl = process.env.NEXT_PUBLIC_API_GATEWAY_URL || 'https://jyjbkau75b.execute-api.us-east-2.amazonaws.com/leads';
     
     const response = await fetch(apiUrl, {
       method: 'POST',
