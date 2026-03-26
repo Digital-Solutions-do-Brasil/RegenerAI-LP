@@ -27,11 +27,11 @@ export default function AcompanharSection() {
             quality={100}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/10" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl space-y-4 sm:space-y-6 text-white">
-          <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">Agricultura regenerativa colaborativa</p>
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl space-y-4 sm:space-y-6 text-emerald-50">
+          <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-emerald-100">Agricultura regenerativa colaborativa</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold leading-tight drop-shadow-md">
             E se ninguém mais precisasse começar do zero?
           </h2>
