@@ -108,10 +108,15 @@ export default function LandingPage() {
               <ul className="space-y-3 text-gray-600 pl-4 lg:pl-6 border-l-4 border-emerald-500 font-semibold">
                 <li>• É o acesso a esse conhecimento.</li>
                 <li>• É a ausência de uma infraestrutura que transforme experiências individuais em conhecimento e inteligência coletiva.</li>
-                <li>• Sem isso, a transição permanece fragmentada e não evolui.</li>
               </ul>
             </div>
 
+          </div>
+
+          <div className="mt-8 lg:mt-10 text-center">
+            <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">
+              Sem isso, a transição permanece fragmentada e não evolui.
+            </p>
           </div>
 
           <div className="mt-8 lg:mt-10 p-8 lg:p-10 xl:p-12 bg-gray-50 rounded-3xl border border-gray-100 text-center shadow-sm w-full">
