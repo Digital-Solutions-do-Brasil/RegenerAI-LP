@@ -6,14 +6,14 @@ export default function SaibaMaisPage() {
   return (
     <div className="bg-white text-gray-900 min-h-screen font-sans">
       <Header />
-      
-      <main className="pt-24 lg:pt-28">
-        
+
+      <main className="w-full">
+
         {/* HERO - HOMEM TRABALHANDO */}
         <section className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
           <Image
-            src="/assets/Homem-trabalhando.png"
-            alt="Homem trabalhando no campo"
+            src="/assets/Homem-trabalhando-v2.jpeg"
+            alt="Agricultor colhendo café no campo"
             fill
             sizes="100vw"
             quality={100}
@@ -22,25 +22,21 @@ export default function SaibaMaisPage() {
           />
           {/* Leve escurecimento para leitura do texto */}
           <div className="absolute inset-0 bg-black/40" />
-          
-          <div className="relative z-10 text-center px-6 max-w-[1200px] mx-auto space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold text-white leading-snug drop-shadow-lg">
-              A transição para a Agricultura Regenerativa já é uma realidade. O Brasil já tem centenas de experiências regenerativas acontecendo.
-            </h1>
-          </div>
 
-          <a
-            href="/acompanhar"
-            className="absolute bottom-6 right-6 lg:bottom-12 lg:right-12 z-20 inline-flex items-center gap-2 rounded-full border border-white/50 bg-white/20 px-6 py-3 text-base lg:text-lg font-semibold text-white backdrop-blur hover:bg-white/40"
-          >
-            Saiba mais <ArrowRight className="w-5 h-5" />
-          </a>
+          <div className="relative z-10 text-center px-6 max-w-[1200px] mx-auto space-y-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold text-white leading-snug drop-shadow-lg">
+              A transição para a Agricultura Regenerativa já é uma realidade.
+            </h1>
+            <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-semibold drop-shadow-md">
+              O Brasil já tem centenas de experiências regenerativas acontecendo.
+            </p>
+          </div>
         </section>
 
         {/* TEXTO INFORMATIVO ABAIXO DA IMAGEM */}
         <section className="pt-6 lg:pt-8 pb-10 lg:pb-12 px-6 lg:px-12 xl:px-24 w-full text-left text-gray-800">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 xl:gap-28 text-lg md:text-xl lg:text-2xl leading-relaxed font-medium w-full">
-            
+
             {/* Coluna 1 */}
             <div className="lg:w-1/2 space-y-4 lg:space-y-6">
               <p className="font-extrabold text-gray-900">Mas elas estão:</p>
@@ -50,8 +46,8 @@ export default function SaibaMaisPage() {
                 <li>• Restritas a conversas pontuais</li>
               </ul>
             </div>
-            
-     {/* Coluna 2 */}
+
+            {/* Coluna 2 */}
             <div className="lg:w-1/2 space-y-4 lg:space-y-6">
               <p className="font-extrabold text-gray-900">O problema principal não é falta de conhecimento técnico:</p>
               <ul className="space-y-3 text-gray-600 pl-4 lg:pl-6 border-l-4 border-emerald-500 font-semibold">

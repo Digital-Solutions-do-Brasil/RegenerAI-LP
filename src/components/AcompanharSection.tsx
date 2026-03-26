@@ -1,41 +1,68 @@
+'use client';
+
+import { useState, useRef } from 'react';
 import Image from 'next/image';
-import Header from '../../components/Header';
 
-export default function AcompanharPage() {
+export default function AcompanharSection() {
+  const [showForm, setShowForm] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  const handleOpenForm = () => {
+    setShowForm(true);
+    setTimeout(() => {
+      formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  };
+
   return (
-    <div className="bg-white text-gray-900 min-h-screen font-sans">
-      <Header />
+    <>
+      {/* HERO ACOMPANHAR */}
+      <section id="acompanhar" className="relative w-full py-16 lg:py-20 min-h-[50vh] lg:min-h-[60vh] flex flex-col items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/assets/Mulher-com-tablet.png"
+            alt="Produtora segurando um tablet no campo"
+            fill
+            sizes="100vw"
+            quality={100}
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/10" />
+        </div>
 
-      <main className="w-full">
-        {/* HERO */}
-        <section className="relative w-full py-16 lg:py-20 min-h-[50vh] lg:min-h-[60vh] flex flex-col items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none">
-            <Image
-              src="/assets/Mulher-com-tablet.png"
-              alt="Produtora segurando um tablet no campo"
-              fill
-              sizes="100vw"
-              quality={100}
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/10" />
-          </div>
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl space-y-4 sm:space-y-6 text-white">
+          <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">Agricultura regenerativa colaborativa</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold leading-tight drop-shadow-md">
+            E se ninguém mais precisasse começar do zero?
+          </h2>
+          <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+            E se as experiências reais de campo se transformassem em memória coletiva estruturada? E se o que funcionou (ou não funcionou) em uma fazenda ajudasse outra a tomar decisões mais seguras e assertivas?
+          </p>
+        </div>
 
-          <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl space-y-4 sm:space-y-6 text-white">
-            <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">Agricultura regenerativa colaborativa</p>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold leading-tight drop-shadow-md">
-              E se ninguém mais precisasse começar do zero?
-            </h1>
-            <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-              E se as experiências reais de campo se transformassem em memória coletiva estruturada? E se o que funcionou (ou não funcionou) em uma fazenda ajudasse outra a tomar decisões mais seguras e assertivas?
-            </p>
-          </div>
-        </section>
+        {/* Botão Quero Acompanhar */}
+        <div className="relative z-10 mt-8 sm:mt-10">
+          <button
+            onClick={handleOpenForm}
+            className="inline-flex items-center justify-center px-8 sm:px-10 py-3.5 sm:py-4 rounded-full bg-emerald-500 text-white font-semibold text-base sm:text-lg shadow-lg hover:bg-emerald-400 transition"
+          >
+            Quero acompanhar
+          </button>
+        </div>
+      </section>
 
-        {/* FORM SECTION (ALWAYS OPEN) */}
-        <section id="formulario" className="relative z-10 w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
+      {/* FORMULÁRIO (INICIALMENTE OCULTO) */}
+      {showForm && (
+        <section id="formulario" ref={formRef} className="relative z-10 w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
           <div className="relative max-w-6xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-8 lg:space-y-10">
+            {/* Botão Fechar */}
+            <button
+              onClick={() => setShowForm(false)}
+              className="absolute top-4 right-6 sm:top-6 sm:right-8 text-sm text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              fechar ✕
+            </button>
+
             <div className="space-y-3 mt-4 sm:mt-0">
                 <p className="text-emerald-500 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">Fique por dentro</p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">
@@ -102,7 +129,7 @@ export default function AcompanharPage() {
             </form>
           </div>
         </section>
-      </main>
-    </div>
+      )}
+    </>
   );
 }
