@@ -20,7 +20,7 @@ export default function AcompanharSection() {
       <section id="acompanhar" className="relative w-full py-16 lg:py-20 min-h-[50vh] lg:min-h-[60vh] flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
-            src="/assets/Mulher-com-tablet.png"
+            src="/assets/campo-gaas.png"
             alt="Produtora segurando um tablet no campo"
             fill
             sizes="100vw"
@@ -35,9 +35,10 @@ export default function AcompanharSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold leading-tight drop-shadow-md">
             E se ninguém mais precisasse começar do zero?
           </h2>
-          <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-            E se as experiências reais de campo se transformassem em memória coletiva estruturada? E se o que funcionou (ou não funcionou) em uma fazenda ajudasse outra a tomar decisões mais seguras e assertivas?
-          </p>
+          <div className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md space-y-4 sm:space-y-6">
+            <p>E se as experiências reais de campo se transformassem em memória coletiva estruturada?</p>
+            <p>E se o que funcionou (ou não funcionou) em uma fazenda ajudasse outra a tomar decisões mais seguras e assertivas?</p>
+          </div>
         </div>
 
         {/* Botão Quero Acompanhar */}
@@ -64,7 +65,7 @@ export default function AcompanharSection() {
             </button>
 
             <div className="space-y-3 mt-4 sm:mt-0">
-                <p className="text-emerald-500 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">Fique por dentro</p>
+              <p className="text-emerald-500 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">Fique por dentro</p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">
                 Quero acompanhar
               </h2>
