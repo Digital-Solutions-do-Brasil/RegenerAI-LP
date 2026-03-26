@@ -115,8 +115,11 @@ export default function LandingPage() {
           </div>
 
           <div className="mt-8 lg:mt-10 p-8 lg:p-10 xl:p-12 bg-gray-50 rounded-3xl border border-gray-100 text-center shadow-sm w-full">
-            <p className="font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-[32px] text-emerald-700 italic">
-              RegenerAI: &ldquo;Nossos dados, nosso solo, nosso futuro, transformando experiências em inteligência coletiva&rdquo;
+            <p className="font-extrabold text-2xl md:text-3xl lg:text-4xl xl:text-[38px] text-emerald-700">
+              RegenerAI
+            </p>
+            <p className="font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-[32px] text-emerald-700 italic mt-2">
+              &ldquo;Nossos dados, nosso solo, nosso futuro, transformando experiências em inteligência coletiva&rdquo;
             </p>
           </div>
         </section>
