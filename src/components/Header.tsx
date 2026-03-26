@@ -7,10 +7,10 @@ import Image from 'next/image';
 export default function Header() {
   return (
     <header className="sticky top-0 w-full z-50 bg-white shadow-sm">
-      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-24 py-4 lg:py-0 flex flex-col lg:flex-row lg:h-32 xl:h-40 gap-4 lg:gap-0 lg:items-center lg:justify-between">
+      <div className="w-full px-4 sm:px-6 lg:pl-3 lg:pr-12 xl:pl-4 xl:pr-24 py-3 lg:py-0 flex flex-col lg:flex-row lg:h-24 xl:h-28 gap-3 lg:gap-0 lg:items-center lg:justify-between">
         <div className="flex items-center justify-between lg:w-auto">
           <Link href="/" className="relative flex shrink-0 items-center w-[260px] h-[65px] sm:w-[300px] sm:h-[75px] lg:w-[320px] lg:h-[80px] xl:w-[420px] xl:h-[110px]">
-            <Image src="/assets/logo.png" alt="RegenerAI Logo" fill className="object-contain object-left scale-[1.2] sm:scale-[1.6] lg:scale-[2.2] xl:scale-[3.2] origin-left pointer-events-none" />
+            <Image src="/assets/logo.png" alt="RegenerAI Logo" fill loading="eager" className="object-contain object-left scale-[1.2] sm:scale-[1.6] lg:scale-[2.2] xl:scale-[3.2] origin-left pointer-events-none" />
           </Link>
           {/* Mobile Actions Container */}
           <div className="flex lg:hidden items-center gap-2">

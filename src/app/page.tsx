@@ -29,10 +29,10 @@ export default function LandingPage() {
             priority
           />
           <div className="relative z-10 text-center px-4 w-full flex flex-col items-center">
-            <h1 className="text-5xl md:text-6xl lg:text-[72px] xl:text-[84px] lg:leading-tight font-extrabold text-white mb-2 lg:mb-4 drop-shadow-lg">
-              Nossos dados, nosso solo e nosso futuro
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[56px] leading-snug font-extrabold text-white mb-2 lg:mb-4 drop-shadow-lg">
+              Nossos dados, nosso solo e nosso futuro!
             </h1>
-            <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white/95 font-medium drop-shadow-md mt-1 lg:mt-3">
+            <p className="text-xl sm:text-2xl lg:text-3xl text-white/95 font-semibold drop-shadow-md mt-1 lg:mt-3">
               Transformando experiências em inteligência coletiva
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function LandingPage() {
         {/* REGENERAI É */}
         <section className="py-12 lg:py-16 xl:py-24 px-6 max-w-[1600px] mx-auto text-center">
           <p className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-500 mb-2 lg:mb-4">
-            E se ninguém precisasse começar do zero.
+            E se ninguém precisasse começar do zero?
           </p>
           <h2 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold text-gray-900 mb-10 lg:mb-16">
             RegenerAI é:
@@ -115,7 +115,7 @@ export default function LandingPage() {
           </div>
 
           <div className="mt-8 lg:mt-10 p-8 lg:p-10 xl:p-12 bg-gray-50 rounded-3xl border border-gray-100 text-center shadow-sm w-full">
-            <p className="font-extrabold text-2xl md:text-3xl lg:text-4xl xl:text-[40px] text-emerald-700 italic">
+            <p className="font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-[32px] text-emerald-700 italic">
               RegenerAI: &ldquo;Nossos dados, nosso solo, nosso futuro, transformando experiências em inteligência coletiva&rdquo;
             </p>
           </div>
