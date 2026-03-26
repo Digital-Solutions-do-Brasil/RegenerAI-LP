@@ -37,7 +37,7 @@ export default function AcompanharPage() {
         <section id="formulario" className="relative z-10 w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
           <div className="relative max-w-6xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-8 lg:space-y-10">
             <div className="space-y-3 mt-4 sm:mt-0">
-                <p className="text-emerald-500 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">Fique por dentro</p>
+              <p className="text-emerald-500 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">Fique por dentro</p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">
                 Quero acompanhar
               </h2>

@@ -41,7 +41,7 @@ export default function LandingPage() {
         {/* REGENERAI É */}
         <section className="py-12 lg:py-16 xl:py-24 px-6 max-w-[1600px] mx-auto text-center">
           <p className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-500 mb-2 lg:mb-4">
-            E se ninguém precisasse começar do zero?
+            E se a transição regenerativa da sua lavoura pudesse ser guiada pela experiência de centenas de agricultores?
           </p>
           <h2 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold text-gray-900 mb-10 lg:mb-16">
             RegenerAI é:

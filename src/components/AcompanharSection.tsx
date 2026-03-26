@@ -31,13 +31,13 @@ export default function AcompanharSection() {
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl space-y-4 sm:space-y-6 text-emerald-50">
-          <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-emerald-100">Agricultura regenerativa colaborativa</p>
+          {/* <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-emerald-100">Agricultura regenerativa colaborativa</p> */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-extrabold leading-tight drop-shadow-md">
-            E se ninguém mais precisasse começar do zero?
+            Agora você tem uma rede ao seu lado!
           </h2>
           <div className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md space-y-4 sm:space-y-6">
-            <p>E se as experiências reais de campo se transformassem em memória coletiva estruturada?</p>
-            <p>E se o que funcionou (ou não funcionou) em uma fazenda ajudasse outra a tomar decisões mais seguras e assertivas?</p>
+            <p>Imagine tomar decisões na transição regenerativa da sua lavoura com base na experiência de centenas de agricultores.</p>
+            <p>Você não está mais sozinho!</p>
           </div>
         </div>
 
