@@ -36,7 +36,7 @@ export default function AcompanharSection() {
             Agora você tem uma rede ao seu lado!
           </h2>
           <div className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md space-y-4 sm:space-y-6">
-            <p>Imagine tomar decisões na transição regenerativa da sua lavoura com base na experiência de centenas de agricultores.</p>
+            <p>Unimos ciência e a experiência real dos agricultores, para te ajudar nas decisões e atender as necessidades da sua lavoura.</p>
             <p>Você não está mais sozinho!</p>
           </div>
         </div>
