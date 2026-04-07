@@ -42,11 +42,7 @@ export default function LandingPage() {
           </div>
 
           {/* Card de Live de Lançamento */}
-          <div className="absolute inset-0 z-50 pointer-events-none">
-            <div className="w-full h-full relative pointer-events-none">
-              <LiveCard />
-            </div>
-          </div>
+          <LiveCard />
         </section>
 
         {/* REGENERAI É */}

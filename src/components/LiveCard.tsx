@@ -7,10 +7,7 @@ export default function LiveCard() {
 
   return (
     <>
-      <div 
-        className="absolute bottom-6 right-6 pointer-events-auto" 
-        style={{ zIndex: 99999 }}
-      >
+      <div className="absolute bottom-6 right-6 z-50">
         <div className="bg-white rounded-2xl shadow-xl p-4 w-64 flex flex-col gap-3">
           <div className="flex items-center justify-between">
             <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center">
@@ -31,37 +28,17 @@ export default function LiveCard() {
           </div>
           <button
             type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowForm(true);
-              console.log("Abrindo popup LiveCard...");
-            }}
-            className="block w-full text-center bg-emerald-800 hover:bg-emerald-700 text-white font-semibold text-sm py-2.5 rounded-xl transition-colors cursor-pointer relative z-[9999] pointer-events-auto"
+            onClick={() => setShowForm(true)}
+            className="block w-full text-center bg-emerald-800 hover:bg-emerald-700 text-white font-semibold text-sm py-2.5 rounded-xl transition-colors cursor-pointer"
           >
             Reserve seu lugar
           </button>
-          <a
-            href="https://chat.whatsapp.com/KRYn2ixYKAJ2xmDYq1qLl6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full text-center border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium text-sm py-2.5 rounded-xl transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.859L.057 23.286a.75.75 0 00.921.921l5.427-1.475A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.497-5.22-1.368l-.374-.215-3.878 1.053 1.053-3.878-.215-.374A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
-            </svg>
-            Me lembre no WhatsApp
-          </a>
         </div>
       </div>
 
       {/* MODAL POPUP (EXCLUSIVO PARA A LIVE) */}
       {showForm && (
-        <div 
-          className="fixed inset-0 flex items-center justify-center bg-black/70 p-4 sm:p-6 backdrop-blur-sm"
-          style={{ zIndex: 99999 }}
-        >
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 sm:p-6 backdrop-blur-sm">
           <div className="relative w-full max-w-4xl bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 space-y-6 lg:space-y-8 overflow-y-auto max-h-[90vh]">
             {/* Botão Fechar */}
             <button
@@ -126,10 +103,22 @@ export default function LiveCard() {
               <input type="hidden" name="_subject" value="Inscrição - Live RegenerAI" />
               <input type="hidden" name="_cc" value="vladimir@digitalsolutions4y.com" />
 
-              <div className="md:col-span-2 flex justify-end mt-2">
+              <div className="md:col-span-2 flex flex-col sm:flex-row justify-end items-center gap-4 mt-2">
+                <a
+                  href="https://chat.whatsapp.com/KRYn2ixYKAJ2xmDYq1qLl6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-emerald-500" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.859L.057 23.286a.75.75 0 00.921.921l5.427-1.475A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.497-5.22-1.368l-.374-.215-3.878 1.053 1.053-3.878-.215-.374A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                  </svg>
+                  Me lembre no WhatsApp
+                </a>
                 <button
                   type="submit"
-                  className="w-full md:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-emerald-500 text-white font-semibold text-base sm:text-lg shadow-lg hover:bg-emerald-400 transition"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-emerald-500 text-white font-semibold text-base sm:text-lg shadow-lg hover:bg-emerald-400 transition"
                 >
                   Enviar
                 </button>
