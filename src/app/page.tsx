@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from '../components/Header';
 import AcompanharSection from '../components/AcompanharSection';
+import LiveCard from '../components/LiveCard';
 
 const features = [
   { icon: 'Prancheta 1.svg', title: 'Inteligência\ncoletiva' },
@@ -19,22 +20,32 @@ export default function LandingPage() {
 
         {/* ===================== INÍCIO ===================== */}
         <section id="inicio" className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
-          <Image
-            src="/assets/hero-landscape.png"
-            alt="Plantação ao pôr do sol - RegenerAI"
-            fill
-            sizes="100vw"
-            quality={100}
-            className="object-cover"
-            priority
-          />
-          <div className="relative z-10 text-center px-4 w-full flex flex-col items-center">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/assets/hero-landscape.png"
+              alt="Plantação ao pôr do sol - RegenerAI"
+              fill
+              sizes="100vw"
+              quality={100}
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/20" />
+          </div>
+          <div className="relative z-10 text-center px-4 w-full flex flex-col items-center pointer-events-none">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[56px] leading-snug font-extrabold text-white mb-2 lg:mb-4 drop-shadow-lg">
               Nossos dados, nosso solo e nosso futuro!
             </h1>
             <p className="text-xl sm:text-2xl lg:text-3xl text-white/95 font-semibold drop-shadow-md mt-1 lg:mt-3">
               Transformando experiências em inteligência coletiva
             </p>
+          </div>
+
+          {/* Card de Live de Lançamento */}
+          <div className="absolute inset-0 z-50 pointer-events-none">
+            <div className="w-full h-full relative pointer-events-none">
+              <LiveCard />
+            </div>
           </div>
         </section>
 
