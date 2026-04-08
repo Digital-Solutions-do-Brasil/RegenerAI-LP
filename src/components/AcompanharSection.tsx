@@ -52,40 +52,6 @@ export default function AcompanharSection() {
         </div>
       </section>
 
-      {/* TEXTO PÓS-HERO ACOMPANHAR */}
-      <section className="pt-6 lg:pt-8 pb-10 lg:pb-12 px-6 lg:px-12 xl:px-24 w-full text-left text-gray-800">
-        <div className="text-lg md:text-xl lg:text-2xl leading-relaxed font-medium text-gray-600 space-y-4">
-          <p className="font-extrabold text-gray-900">Agora você tem uma rede ao seu lado!</p>
-          <p>
-            Unimos ciência e a experiência real dos agricultores, para te ajudar nas decisões e atender as necessidades da sua lavoura.
-          </p>
-          <p>
-            Participe da nossa live de lançamento e venha conhecer tudo o que estamos construindo.
-          </p>
-          <p className="font-bold text-gray-900">06 de maio</p>
-          <p>
-            Tema: <span className="italic">&ldquo;Como vencer a dependência, os altos riscos e a baixa rentabilidade com a Agricultura Tropical Regenerativa.&rdquo;</span>
-          </p>
-          <p>
-            Entre também no nosso grupo de WhatsApp e faça parte dessa rede desde o início.
-          </p>
-        </div>
-
-        <div className="mt-10 lg:mt-12">
-          <a
-            href="https://chat.whatsapp.com/KRYn2ixYKAJ2xmDYq1qLl6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-lg lg:text-xl px-10 py-4 rounded-full shadow-lg transition-colors duration-200"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="w-6 h-6">
-              <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.468 2.027 7.769L0 32l8.468-2.004A15.938 15.938 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.77-1.856l-.485-.29-5.025 1.189 1.218-4.888-.317-.503A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.815c-.398-.199-2.354-1.162-2.72-1.295-.365-.133-.63-.199-.896.199-.265.398-1.029 1.295-1.261 1.561-.232.265-.465.298-.863.1-.398-.199-1.681-.619-3.202-1.977-1.184-1.056-1.983-2.36-2.216-2.758-.232-.398-.025-.613.175-.811.18-.178.398-.465.597-.697.199-.232.265-.398.398-.664.133-.265.066-.497-.033-.696-.1-.199-.896-2.16-1.228-2.957-.323-.776-.651-.671-.896-.683l-.763-.013c-.265 0-.696.1-1.061.497-.365.398-1.394 1.362-1.394 3.322s1.427 3.854 1.627 4.12c.199.265 2.808 4.286 6.803 6.012.951.41 1.693.655 2.271.839.954.304 1.822.261 2.508.158.765-.114 2.354-.962 2.686-1.892.332-.93.332-1.727.232-1.892-.099-.166-.365-.265-.763-.464z"/>
-            </svg>
-            Entrar no grupo do WhatsApp
-          </a>
-        </div>
-      </section>
-
       {/* FORMULÁRIO (INICIALMENTE OCULTO) */}
       {showForm && (
         <section id="formulario" ref={formRef} className="relative z-10 w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
