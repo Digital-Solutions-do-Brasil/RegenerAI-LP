@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import AcompanharSection from '../components/AcompanharSection';
 import LiveCard from '../components/LiveCard';
+import LiveFinalSection from '../components/LiveFinalSection';
 
 const features = [
   { icon: 'Prancheta 1.svg', title: 'Inteligência\ncoletiva' },
@@ -213,6 +214,9 @@ export default function LandingPage() {
 
         {/* ===================== ACOMPANHAR + FORMULÁRIO ===================== */}
         <AcompanharSection />
+
+        {/* ===================== SESSÃO FINAL DA LIVE ===================== */}
+        <LiveFinalSection />
 
       </main>
     </div>
