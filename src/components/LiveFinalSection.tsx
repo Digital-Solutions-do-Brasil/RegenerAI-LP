@@ -8,7 +8,7 @@ export default function LiveFinalSection() {
 
   return (
     <>
-      <section className="relative w-full py-20 lg:py-32 flex flex-col items-center justify-center overflow-hidden">
+      <section id="live" className="relative w-full py-20 lg:py-32 flex flex-col items-center justify-center overflow-hidden">
         {/* Imagem de Fundo */}
         <div className="absolute inset-0 z-0">
           <Image
