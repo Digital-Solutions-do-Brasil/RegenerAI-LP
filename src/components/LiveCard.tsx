@@ -26,13 +26,6 @@ export default function LiveCard() {
               <span>06 de Maio às 9h</span>
             </div>
           </div>
-          <button
-            type="button"
-            onClick={() => setShowForm(true)}
-            className="block w-full text-center bg-emerald-800 hover:bg-emerald-700 text-white font-semibold text-sm py-2.5 rounded-xl transition-colors cursor-pointer"
-          >
-            Reserve seu lugar
-          </button>
         </div>
       </div>
 
