@@ -8,7 +8,7 @@ export default function LiveFinalSection() {
 
   return (
     <>
-      <section id="live" className="relative w-full py-16 sm:py-20 lg:py-24 flex flex-col items-center justify-center overflow-hidden scroll-mt-[120px]">
+      <section id="live" className="relative w-full py-16 sm:py-20 lg:py-24 flex flex-col items-center justify-center overflow-hidden scroll-mt-[180px]">
         {/* Imagem de Fundo */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -27,8 +27,7 @@ export default function LiveFinalSection() {
           {/* Textos Superiores */}
           <div className="flex flex-col items-center text-white max-w-3xl">
             <p className="font-bold text-2xl sm:text-3xl md:text-4xl leading-snug">
-              Participe da nossa live de lançamento e venha
-              <br />
+              Participe da nossa live de lançamento e venha<br />
               conhecer tudo o que estamos construindo.
             </p>
             <p className="mt-4 text-base sm:text-lg md:text-xl text-white/85 font-medium">
