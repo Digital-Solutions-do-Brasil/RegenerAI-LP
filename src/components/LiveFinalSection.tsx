@@ -8,7 +8,7 @@ export default function LiveFinalSection() {
 
   return (
     <>
-      <section id="live" className="relative w-full py-16 sm:py-20 lg:py-24 flex flex-col items-center justify-center overflow-hidden scroll-mt-[180px]">
+      <section className="relative w-full py-16 sm:py-20 lg:py-24 flex flex-col items-center justify-center overflow-hidden">
         {/* Imagem de Fundo */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -23,12 +23,12 @@ export default function LiveFinalSection() {
           <div className="absolute inset-0 bg-[#0B2C24]/80" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl flex flex-col items-center text-center space-y-10">
+        <div id="live" className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl flex flex-col items-center text-center space-y-10 scroll-mt-[200px]">
           {/* Textos Superiores */}
           <div className="flex flex-col items-center text-white max-w-3xl">
             <p className="font-bold text-2xl sm:text-3xl md:text-4xl leading-snug">
-              Participe da nossa live de lançamento e venha<br />
-              conhecer tudo o que estamos construindo.
+              <span className="block">Participe da nossa live de lançamento e venha</span>
+              <span className="block">conhecer tudo o que estamos construindo.</span>
             </p>
             <p className="mt-4 text-base sm:text-lg md:text-xl text-white/85 font-medium">
               Entre também no nosso grupo de WhatsApp e faça<br className="hidden md:block"/> parte dessa rede desde o início.
