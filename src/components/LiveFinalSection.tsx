@@ -8,7 +8,7 @@ export default function LiveFinalSection() {
 
   return (
     <>
-      <section className="relative w-full py-10 sm:py-16 lg:py-20 flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full py-6 sm:py-10 lg:py-14 flex flex-col items-center justify-center overflow-hidden">
         {/* Imagem de Fundo */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -23,25 +23,25 @@ export default function LiveFinalSection() {
           <div className="absolute inset-0 bg-[#0B2C24]/80" />
         </div>
 
-        <div id="live" className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl flex flex-col items-center text-center space-y-8 scroll-mt-[140px]">
+        <div id="live" className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl flex flex-col items-center text-center space-y-8 scroll-mt-[120px]">
           {/* Textos Superiores */}
           <div className="flex flex-col items-center text-white max-w-4xl">
-            <p className="font-bold text-xl sm:text-2xl md:text-3xl leading-tight">
+            <p className="font-bold text-lg sm:text-xl md:text-2xl leading-tight">
               <span className="block">Participe da nossa live de lançamento e venha</span>
               <span className="block">conhecer tudo o que estamos construindo.</span>
             </p>
-            <p className="mt-3 text-sm sm:text-base md:text-lg text-white/85 font-medium">
+            <p className="mt-2 text-sm sm:text-base text-white/85 font-medium">
               Entre também no nosso grupo de WhatsApp e faça<br className="hidden md:block"/> parte dessa rede desde o início.
             </p>
           </div>
 
           {/* Card Principal */}
-          <div className="bg-[#D3DDD3] rounded-3xl p-6 sm:p-8 lg:p-10 w-full max-w-3xl shadow-2xl flex flex-col items-center text-center space-y-6 relative">
-            <div className="space-y-3">
-              <p className="text-[#34664A] font-bold tracking-[0.3em] text-xs sm:text-sm uppercase">
+          <div className="bg-[#D3DDD3] rounded-3xl p-6 sm:p-7 lg:p-8 w-full max-w-3xl shadow-2xl flex flex-col items-center text-center space-y-5 relative">
+            <div className="space-y-2">
+              <p className="text-[#34664A] font-bold tracking-[0.3em] text-[11px] sm:text-xs uppercase">
                 Evento Exclusivo
               </p>
-              <h2 className="text-[#205135] text-xl sm:text-2xl md:text-3xl font-extrabold leading-snug">
+              <h2 className="text-[#205135] text-lg sm:text-xl md:text-2xl font-extrabold leading-snug">
                 Como vencer a dependência,<br className="hidden md:block"/> os altos riscos e a baixa rentabilidade com a<br className="hidden md:block"/> Agricultura Tropical Regenerativa
               </h2>
             </div>
