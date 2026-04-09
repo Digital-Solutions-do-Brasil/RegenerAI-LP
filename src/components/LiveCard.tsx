@@ -7,9 +7,9 @@ export default function LiveCard() {
 
   return (
     <>
-      <div className="absolute bottom-6 right-6 z-50">
-        <div className="bg-white rounded-2xl shadow-xl p-4 w-64 flex flex-col gap-3">
-          <div className="flex items-center justify-between">
+      <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 z-50">
+        <div className="bg-white rounded-xl md:rounded-2xl shadow-xl p-3 md:p-4 w-auto md:w-64 flex flex-col gap-1 md:gap-3">
+          <div className="hidden md:flex items-center justify-between">
             <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0H3" />
@@ -18,9 +18,9 @@ export default function LiveCard() {
             <span className="text-[10px] font-bold text-white bg-emerald-500 px-2 py-0.5 rounded-full uppercase tracking-wide">Ao Vivo</span>
           </div>
           <div>
-            <p className="font-bold text-gray-900 text-base leading-tight">Live de Lançamento</p>
-            <div className="flex items-center gap-1 mt-1 text-gray-500 text-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <p className="font-bold text-gray-900 text-sm md:text-base leading-tight">Live de Lançamento</p>
+            <div className="flex items-center gap-1 mt-0.5 md:mt-1 text-gray-500 text-xs md:text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" className="hidden md:block w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
               </svg>
               <span>06 de Maio às 9h</span>
