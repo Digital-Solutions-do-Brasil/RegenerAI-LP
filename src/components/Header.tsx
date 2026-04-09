@@ -30,7 +30,7 @@ export default function Header() {
 
         {/* Navigation & Desktop Actions */}
         <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 xl:gap-10">
-          <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-gray-600 whitespace-nowrap">
+          <nav className="flex items-center justify-start lg:justify-start gap-4 sm:gap-6 text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-gray-600 whitespace-nowrap overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] pb-1 lg:pb-0 w-full px-1 lg:px-0">
             <a href="#inicio" className="hover:text-emerald-600 transition-colors">Início</a>
             <a href="#teste" className="hover:text-emerald-600 transition-colors">A Transição</a>
             <a href="#sobre-nos" className="hover:text-emerald-600 transition-colors">Sobre nós</a>
