@@ -106,7 +106,7 @@ export default function AcompanharSection() {
               </label>
 
               <div className="md:col-span-2 flex flex-col gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-gray-700">
-                Observações
+                Compartilhe sua estória com a gente.
                 <textarea
                   name="observacoes"
                   placeholder="Conte um pouco sobre sua fazenda, desafios ou interesses..."
