@@ -32,7 +32,8 @@ export default function Header() {
         <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 xl:gap-10">
           <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-gray-600 whitespace-nowrap">
             <a href="#inicio" className="hover:text-emerald-600 transition-colors">Início</a>
-            <a href="#sobre-nos" className="hover:text-emerald-600 transition-colors">Sobre nós</a>
+            <a href="#sobre-nos" className="hover:text-emerald-600 transition-colors">A Transição</a>
+            <a href="#teste" className="hover:text-emerald-600 transition-colors">Sobre nós</a>
             <a href="#acompanhar" className="hover:text-emerald-600 transition-colors">Acompanhar</a>
             <a href="#live" className="hover:text-emerald-600 transition-colors">Live</a>
           </nav>

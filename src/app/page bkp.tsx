@@ -125,8 +125,8 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ===================== Teste ===================== */}
-        <section id="teste" className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
+        {/* ===================== SOBRE NÓS ===================== */}
+        <section id="sobre-nos" className="relative w-full h-[50vh] lg:h-[60vh] xl:h-[70vh] min-h-[400px] max-h-[850px] flex flex-col items-center justify-center">
           <Image
             src="/assets/Homem-trabalhando-v2.jpeg"
             alt="Agricultor colhendo café no campo"
@@ -187,10 +187,7 @@ export default function LandingPage() {
               &ldquo;Nossos dados, nosso solo, nosso futuro, transformando experiências em inteligência coletiva&rdquo;
             </p>
           </div>
-        </section>
 
-        {/* ===================== NOVA SEÇÃO (SOBRE NÓS) ===================== */}
-        <section id="sobre-nos" className="pb-10 lg:pb-12 px-6 lg:px-12 xl:px-24 w-full text-left text-gray-800 scroll-mt-[120px]">
           <div className="mt-10 lg:mt-14 text-lg md:text-xl lg:text-2xl leading-relaxed font-medium text-gray-600 space-y-4">
             <p>
               O RegenerAI é uma iniciativa do GAAS (Grupo Associado de Agricultura Sustentável) para transformar a experiência do campo em inteligência coletiva a serviço da agricultura regenerativa.
